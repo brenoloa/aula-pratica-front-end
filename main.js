@@ -32,7 +32,7 @@ function busca() {
         document.getElementById("tela3").innerHTML = "";
     }
    else {
-        document.getElementById("tela").innerHTML = "Atleta não encontrado.";
+        document.getElementById("tela").innerHTML = "<h4>Atleta não encontrado, tente outra busca.</h4>";
         document.getElementById("imag").innerHTML = "";
         document.getElementById("topo").innerHTML = "";
         document.getElementById("tela2").innerHTML = "";

@@ -69,3 +69,7 @@ h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
 }
+h4 {
+    font-size: large;
+    text-align: center;
+}
