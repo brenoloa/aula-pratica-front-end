@@ -26,13 +26,15 @@ function busca() {
 
     }
 
-    if (busca === "") {
+    else if (busca === "") {
         document.getElementById("tela").innerHTML = "";
         document.getElementById("imag").innerHTML = "";
         document.getElementById("topo").innerHTML = "";
         document.getElementById("tela2").innerHTML = "";
         document.getElementById("tela3").innerHTML = "";
     }
+    else {
+        document.getElementById("tela".innerHTML = "Busca não identificada. tente novamente.";
 }
 
 function preencherBusca(valor) {
