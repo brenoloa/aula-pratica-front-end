@@ -24,17 +24,23 @@ function busca() {
         document.getElementById("tela2").innerHTML = "<p>Revelado pelo Flamengo, no ano de 2018 foi um dos escolhidos para fazer parte da lista de 12 suplentes chamados pelo técnico da Seleção Brasileira, Tite, para a disputa da Copa do Mundo de 2018, sendo o mais novo dentre os 35 convocados. No mesmo ano, atuando pelo clube rubro-negro, recebeu o Troféu Bola de Prata da ESPN, o Troféu Mesa Redonda da TV Gazeta, e o Prêmio Craque do Brasileirão, da CBF e do site GloboEsporte.com, ambos como melhor meia do Campeonato Brasileiro daquele ano.</p>";
         document.getElementById("tela3").innerHTML = '<p>Confira mais na <a href="https://www.bet365.com/#/HO/">wikipédia</a></p>';
 
-    }
-
-    if (busca === "") {
+    }else if (busca === "") {
         document.getElementById("tela").innerHTML = "";
         document.getElementById("imag").innerHTML = "";
         document.getElementById("topo").innerHTML = "";
         document.getElementById("tela2").innerHTML = "";
         document.getElementById("tela3").innerHTML = "";
     }
-   
-function preencherBusca(valor) {
+   else {
+        document.getElementById("tela").innerHTML = "Atleta não encontrado.";
+        document.getElementById("imag").innerHTML = "";
+        document.getElementById("topo").innerHTML = "";
+        document.getElementById("tela2").innerHTML = "";
+        document.getElementById("tela3").innerHTML = "";
+}
+}
+    function preencherBusca(valor) {
     document.getElementById("busca").value = valor;
     busca(); // Chama a função de busca após definir o valor
 }
+
